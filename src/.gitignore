@@ -1,0 +1,48 @@
+# Cargo build output
+/target/
+/debug/
+/release/
+
+# Keep lockfiles tracked by default for reproducible binary/application builds.
+!Cargo.lock
+!**/Cargo.lock
+
+# rustfmt backups
+**/*.rs.bk
+
+# Windows/MSVC debug symbols
+*.pdb
+*.ilk
+
+# Test, coverage, and profiling output
+/coverage/
+/criterion/
+tarpaulin-report.html
+cargo-tarpaulin-report.xml
+flamegraph.svg
+*.profraw
+*.profdata
+
+# cargo-mutants output
+**/mutants.out*/
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE metadata
+/.idea/
+/.vscode/
+/.codex*/
+/codex*/
+
+# Added by cargo
+
+/target
