@@ -15,9 +15,9 @@ pub use command::{
     ShellCommandDialect, StartupCommand, StartupDirectory, StartupInvocation,
     default_platform_command_panel,
 };
-pub use identity::{
-    APP_DISPLAY_NAME, APP_NAME, APP_VERSION, AUTHOR_PROFILE_URL, LINUX_APPLICATION_ID,
-};
+pub use identity::{APP_DISPLAY_NAME, APP_VERSION, AUTHOR_PROFILE_URL};
+#[cfg(target_os = "linux")]
+pub use identity::{APP_NAME, LINUX_APPLICATION_ID};
 #[cfg(any(test, target_os = "windows"))]
 pub use input::terminal_input_from_char;
 pub use input::{

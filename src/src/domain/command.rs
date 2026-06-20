@@ -42,14 +42,6 @@ pub struct CommandText {
 }
 
 impl CommandText {
-    pub fn new(value: impl Into<String>) -> AppResult<Self> {
-        let value = value.into();
-        validate_command_text(&value)?;
-        Ok(Self {
-            value: value.into_bytes(),
-        })
-    }
-
     #[cfg(test)]
     pub fn from_static(value: &'static str) -> Self {
         Self {
@@ -309,19 +301,15 @@ pub struct ButtonArgumentValues {
 }
 
 impl ButtonArgumentValues {
+    #[cfg(unix)]
     pub fn set_selected_file_path(&mut self, path: PathBuf) {
-        #[cfg(unix)]
-        {
-            self.selected_file_posix_bytes = Some(path.as_os_str().as_bytes().to_vec());
-        }
+        self.selected_file_posix_bytes = Some(path.as_os_str().as_bytes().to_vec());
         self.selected_file = Some(path.to_string_lossy().into_owned());
     }
 
+    #[cfg(unix)]
     pub fn set_selected_dir_path(&mut self, path: PathBuf) {
-        #[cfg(unix)]
-        {
-            self.selected_dir_posix_bytes = Some(path.as_os_str().as_bytes().to_vec());
-        }
+        self.selected_dir_posix_bytes = Some(path.as_os_str().as_bytes().to_vec());
         self.selected_dir = Some(path.to_string_lossy().into_owned());
     }
 
@@ -922,23 +910,6 @@ fn validate_label(value: &str, empty_message: &'static str) -> AppResult<()> {
     Ok(())
 }
 
-fn validate_command_text(value: &str) -> AppResult<()> {
-    if value.trim().is_empty() {
-        return Err(AppError::InvalidInput("command text must not be empty"));
-    }
-
-    if value
-        .chars()
-        .any(|character| matches!(character, '\r' | '\n'))
-    {
-        return Err(AppError::InvalidInput(
-            "command text must not contain line breaks",
-        ));
-    }
-
-    Ok(())
-}
-
 fn validate_command_bytes(value: &[u8]) -> AppResult<()> {
     if value.is_empty() || value.iter().all(u8::is_ascii_whitespace) {
         return Err(AppError::InvalidInput("command text must not be empty"));
@@ -1323,6 +1294,7 @@ pub struct StartupCommand {
 }
 
 impl StartupCommand {
+    #[cfg(test)]
     pub fn from_arguments(arguments: Vec<String>) -> AppResult<Option<Self>> {
         if arguments.is_empty() {
             return Ok(None);
@@ -1490,6 +1462,7 @@ fn validate_startup_argument(argument: &str) -> AppResult<()> {
     Ok(())
 }
 
+#[cfg(unix)]
 fn validate_startup_argument_bytes(argument: &[u8]) -> AppResult<()> {
     if argument.iter().any(u8::is_ascii_control) {
         return Err(AppError::InvalidInput(
@@ -1514,6 +1487,7 @@ fn is_unsupported_shell_character(character: char) -> bool {
     matches!(character, '"' | '%' | '!' | '$' | '`')
 }
 
+#[cfg(unix)]
 fn is_unsupported_shell_character_byte(byte: u8) -> bool {
     matches!(byte, b'"' | b'%' | b'!' | b'$' | b'`')
 }

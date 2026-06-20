@@ -365,17 +365,7 @@ pub(super) fn join_detached_cleanup_threads() -> Vec<AppError> {
     errors
 }
 
-pub(super) fn finish_detached_cleanup_threads() -> Vec<AppError> {
-    let mut errors = recover_detached_cleanup_failures(take_detached_cleanup_failures());
-    errors.extend(drain_detached_cleanup_tasks_until_finished(
-        take_detached_cleanup_tasks(),
-    ));
-    errors.extend(recover_detached_cleanup_failures(
-        take_detached_cleanup_failures(),
-    ));
-    errors
-}
-
+#[cfg(any(test, target_os = "linux"))]
 pub(super) fn is_detached_cleanup_timeout_error(error: &AppError) -> bool {
     error.operation() == Some(DETACHED_CLEANUP_DRAIN_TIMEOUT_OPERATION)
 }
@@ -409,6 +399,7 @@ fn drain_detached_cleanup_tasks(
     }
 }
 
+#[cfg(test)]
 fn drain_detached_cleanup_tasks_until_finished(
     mut tasks: Vec<DetachedCleanupTask>,
 ) -> Vec<AppError> {

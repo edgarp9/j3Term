@@ -48,10 +48,7 @@ pub(crate) fn join_detached_cleanup_tasks() -> Vec<AppError> {
     process::join_detached_cleanup_threads()
 }
 
-pub(crate) fn finish_detached_cleanup_tasks() -> Vec<AppError> {
-    process::finish_detached_cleanup_threads()
-}
-
+#[cfg(target_os = "linux")]
 pub(crate) fn is_detached_cleanup_timeout_error(error: &AppError) -> bool {
     process::is_detached_cleanup_timeout_error(error)
 }
