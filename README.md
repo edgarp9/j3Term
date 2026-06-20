@@ -7,6 +7,9 @@ j3Term is a small desktop terminal application written in Rust. It combines a
 native terminal view with a configurable command panel so repeated shell commands
 can be launched quickly from buttons.
 
+<img width="376" height="276" alt="j3term" src="https://github.com/user-attachments/assets/d5637649-59fe-47bb-8743-2cd3458b1dd7" />
+
+
 ## Status
 
 This project is experimental and still under active development. It was created
