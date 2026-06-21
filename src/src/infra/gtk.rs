@@ -17,16 +17,18 @@ use crate::domain::layout::{
 };
 use crate::domain::terminal::TerminalChangedRows;
 use crate::domain::{
-    APP_DISPLAY_NAME, APP_VERSION, AUTHOR_PROFILE_URL, ButtonArgumentValues, CommandArguments,
-    CommandButton, CommandButtonDefinition, CommandButtonId, CommandPanel, CommandText,
-    DEFAULT_COLUMNS, DEFAULT_ROWS, LINUX_APPLICATION_ID, MAX_FONT_SIZE_POINTS,
+    ABOUT_FILE, ABOUT_TEXT, APP_DISPLAY_NAME, AUTHOR_PROFILE_URL, ButtonArgumentValues,
+    CommandArguments, CommandButton, CommandButtonDefinition, CommandButtonId, CommandPanel,
+    CommandText, DEFAULT_COLUMNS, DEFAULT_ROWS, LINUX_APPLICATION_ID, MAX_FONT_SIZE_POINTS,
     MIN_FONT_SIZE_POINTS, StartupInvocation, TerminalCell, TerminalCommand, TerminalFont,
     TerminalGridPoint, TerminalInput, TerminalKey, TerminalKeyModifiers, TerminalScroll,
     TerminalScrollState, TerminalSelection, TerminalSize, TerminalTabId, TerminalTabView,
-    TerminalViewport, UiPoint, UiRect, WindowLayout, terminal_input_from_key,
+    TerminalViewport, UiPoint, UiRect, WindowLayout, application_version_label,
+    terminal_input_from_key,
 };
 use crate::error::{AppError, AppResult};
 use crate::infra::config::{AppSettings, ConfigStore};
+use crate::infra::distribution;
 use crate::infra::linux_desktop;
 use crate::infra::pty::{
     PortablePtySession, is_detached_cleanup_timeout_error, join_detached_cleanup_tasks,
@@ -3116,13 +3118,12 @@ fn show_error(parent: &gtk::ApplicationWindow, message: &str) {
 
 fn show_about(parent: &gtk::ApplicationWindow) {
     let title = format!("About {APP_DISPLAY_NAME}");
-    let version = format!("Version {APP_VERSION}");
     let dialog = gtk::Dialog::builder()
         .title(title.as_str())
         .modal(true)
         .transient_for(parent)
-        .default_width(360)
-        .default_height(160)
+        .default_width(700)
+        .default_height(520)
         .build();
     dialog.add_button("OK", gtk::ResponseType::Ok);
     dialog.set_default_response(gtk::ResponseType::Ok);
@@ -3134,15 +3135,35 @@ fn show_about(parent: &gtk::ApplicationWindow) {
     content.set_margin_start(12);
     content.set_margin_end(12);
 
-    let name = gtk::Label::new(Some(APP_DISPLAY_NAME));
-    name.set_xalign(0.0);
-    let version = gtk::Label::new(Some(&version));
-    version.set_xalign(0.0);
+    let version_label_text = application_version_label();
+    let version_label = gtk::Label::new(Some(&version_label_text));
+    version_label.set_halign(gtk::Align::Start);
+    version_label.set_selectable(true);
+
+    let buffer = gtk::TextBuffer::new(None);
+    buffer.set_text(&distribution::load_text_file_or_embedded(
+        ABOUT_FILE, ABOUT_TEXT,
+    ));
+
+    let text_view = gtk::TextView::with_buffer(&buffer);
+    text_view.set_editable(false);
+    text_view.set_cursor_visible(false);
+    text_view.set_monospace(true);
+    text_view.set_wrap_mode(gtk::WrapMode::WordChar);
+
+    let scrolled = gtk::ScrolledWindow::builder()
+        .hexpand(true)
+        .vexpand(true)
+        .min_content_width(640)
+        .min_content_height(360)
+        .build();
+    scrolled.set_child(Some(&text_view));
+
     let link = gtk::LinkButton::with_label(AUTHOR_PROFILE_URL, AUTHOR_PROFILE_URL);
     link.set_halign(gtk::Align::Start);
 
-    content.append(&name);
-    content.append(&version);
+    content.append(&version_label);
+    content.append(&scrolled);
     content.append(&link);
 
     let _ = run_dialog_blocking(&dialog);

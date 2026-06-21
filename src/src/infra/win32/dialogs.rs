@@ -18,6 +18,7 @@ use windows_sys::Win32::UI::Controls::Dialogs::{
     CF_SCREENFONTS, CHOOSEFONTW, ChooseFontW, CommDlgExtendedError, GetOpenFileNameW, OFN_EXPLORER,
     OFN_FILEMUSTEXIST, OFN_PATHMUSTEXIST, OPENFILENAMEW,
 };
+use windows_sys::Win32::UI::Controls::EM_SETLIMITTEXT;
 use windows_sys::Win32::UI::Input::KeyboardAndMouse::{EnableWindow, SetFocus};
 use windows_sys::Win32::UI::Shell::{
     BIF_NEWDIALOGSTYLE, BIF_RETURNONLYFSDIRS, BROWSEINFOW, SHBrowseForFolderW,
@@ -25,20 +26,23 @@ use windows_sys::Win32::UI::Shell::{
 };
 use windows_sys::Win32::UI::WindowsAndMessaging::{
     BS_DEFPUSHBUTTON, BS_PUSHBUTTON, CS_HREDRAW, CS_VREDRAW, CW_USEDEFAULT, CreateWindowExW,
-    DefWindowProcW, DestroyWindow, DispatchMessageW, ES_AUTOHSCROLL, GWLP_USERDATA, GetDlgItem,
-    GetMessageW, GetWindowLongPtrW, GetWindowRect, GetWindowTextLengthW, GetWindowTextW, HMENU,
-    IDC_ARROW, IsDialogMessageW, LoadCursorW, MB_ICONERROR, MB_OK, MSG, MessageBoxW,
-    RegisterClassW, SW_SHOW, SendMessageW, SetWindowLongPtrW, SetWindowTextW, ShowWindow,
-    TranslateMessage, WM_CLOSE, WM_COMMAND, WM_CREATE, WM_DESTROY, WM_NCDESTROY, WM_SETFONT,
-    WNDCLASSW, WS_BORDER, WS_CAPTION, WS_CHILD, WS_EX_CONTROLPARENT, WS_EX_DLGMODALFRAME, WS_POPUP,
-    WS_SYSMENU, WS_TABSTOP, WS_VISIBLE,
+    DefWindowProcW, DestroyWindow, DispatchMessageW, ES_AUTOHSCROLL, ES_AUTOVSCROLL, ES_MULTILINE,
+    ES_READONLY, GWLP_USERDATA, GetDlgItem, GetMessageW, GetWindowLongPtrW, GetWindowRect,
+    GetWindowTextLengthW, GetWindowTextW, HMENU, IDC_ARROW, IsDialogMessageW, LoadCursorW,
+    MB_ICONERROR, MB_OK, MSG, MessageBoxW, RegisterClassW, SW_SHOW, SendMessageW,
+    SetWindowLongPtrW, SetWindowTextW, ShowWindow, TranslateMessage, WM_CLOSE, WM_COMMAND,
+    WM_CREATE, WM_DESTROY, WM_NCDESTROY, WM_SETFONT, WNDCLASSW, WS_BORDER, WS_CAPTION, WS_CHILD,
+    WS_EX_CONTROLPARENT, WS_EX_DLGMODALFRAME, WS_HSCROLL, WS_POPUP, WS_SYSMENU, WS_TABSTOP,
+    WS_VISIBLE, WS_VSCROLL,
 };
 
 use crate::domain::{
-    APP_DISPLAY_NAME, APP_VERSION, AUTHOR_PROFILE_URL, CommandArguments, CommandButtonDefinition,
-    CommandCategoryDefinition, MAX_FONT_SIZE_POINTS, MIN_FONT_SIZE_POINTS, TerminalFont,
+    ABOUT_FILE, ABOUT_TEXT, APP_DISPLAY_NAME, AUTHOR_PROFILE_URL, CommandArguments,
+    CommandButtonDefinition, CommandCategoryDefinition, MAX_FONT_SIZE_POINTS, MIN_FONT_SIZE_POINTS,
+    TerminalFont, application_version_label,
 };
 use crate::error::{AppError, AppResult};
+use crate::infra::distribution;
 
 use super::store_window_userdata;
 use super::windowing::{current_instance, wide_null};
@@ -51,8 +55,8 @@ const BUTTON_EDITOR_WIDTH: i32 = 560;
 const BUTTON_EDITOR_HEIGHT: i32 = 300;
 const TEXT_INPUT_WIDTH: i32 = 420;
 const TEXT_INPUT_HEIGHT: i32 = 150;
-const ABOUT_WIDTH: i32 = 430;
-const ABOUT_HEIGHT: i32 = 190;
+const ABOUT_WIDTH: i32 = 560;
+const ABOUT_HEIGHT: i32 = 340;
 
 const ID_BUTTON_LABEL: u16 = 2101;
 const ID_BUTTON_EXECUTABLE: u16 = 2102;
@@ -70,8 +74,9 @@ const ID_TEXT_VALUE: u16 = 2201;
 const ID_TEXT_OK: u16 = 2202;
 const ID_TEXT_CANCEL: u16 = 2203;
 
-const ID_ABOUT_LINK: u16 = 2301;
-const ID_ABOUT_OK: u16 = 2302;
+const ID_ABOUT_TEXT: u16 = 2301;
+const ID_ABOUT_LINK: u16 = 2302;
+const ID_ABOUT_OK: u16 = 2303;
 
 const S_OK: i32 = 0;
 const S_FALSE: i32 = 1;
@@ -683,12 +688,20 @@ fn create_text_input_controls(hwnd: HWND, state: &TextInputState) -> AppResult<(
 }
 
 fn create_about_controls(hwnd: HWND) -> AppResult<()> {
-    let version = format!("Version {APP_VERSION}");
-
-    create_label(hwnd, APP_DISPLAY_NAME, 18, 20, 360, 22)?;
-    create_label(hwnd, &version, 18, 48, 360, 22)?;
-    create_button(hwnd, ID_ABOUT_LINK, AUTHOR_PROFILE_URL, 18, 78, 360, 30)?;
-    create_button(hwnd, ID_ABOUT_OK, "OK", 310, 120, 70, 30)?;
+    let version_label = application_version_label();
+    let about_text = distribution::load_text_file_or_embedded(ABOUT_FILE, ABOUT_TEXT);
+    create_label(hwnd, &version_label, 18, 18, 504, 22)?;
+    create_readonly_multiline_edit(
+        hwnd,
+        ID_ABOUT_TEXT,
+        &about_text.replace('\n', "\r\n"),
+        18,
+        46,
+        504,
+        188,
+    )?;
+    create_button(hwnd, ID_ABOUT_LINK, AUTHOR_PROFILE_URL, 18, 250, 230, 30)?;
+    create_button(hwnd, ID_ABOUT_OK, "OK", 452, 250, 70, 30)?;
     focus_control(hwnd, ID_ABOUT_OK);
     Ok(())
 }
@@ -854,6 +867,46 @@ fn create_edit(
         id,
         ControlBounds::new(x, y, width, height),
     )
+}
+
+fn create_readonly_multiline_edit(
+    parent: HWND,
+    id: u16,
+    text: &str,
+    x: i32,
+    y: i32,
+    width: i32,
+    height: i32,
+) -> AppResult<HWND> {
+    let hwnd = create_child(
+        parent,
+        "EDIT",
+        "",
+        WS_TABSTOP
+            | WS_BORDER
+            | WS_VSCROLL
+            | WS_HSCROLL
+            | ES_MULTILINE as u32
+            | ES_AUTOVSCROLL as u32
+            | ES_AUTOHSCROLL as u32
+            | ES_READONLY as u32,
+        id,
+        ControlBounds::new(x, y, width, height),
+    )?;
+
+    let limit = text.encode_utf16().count().saturating_add(1);
+    // SAFETY: hwnd is a live edit control; EM_SETLIMITTEXT accepts the new UTF-16 text limit.
+    unsafe {
+        SendMessageW(hwnd, EM_SETLIMITTEXT, limit, 0);
+    }
+
+    let text = wide_null(text);
+    // SAFETY: hwnd is a live edit control and text is valid null-terminated UTF-16.
+    unsafe {
+        SetWindowTextW(hwnd, text.as_ptr());
+    }
+
+    Ok(hwnd)
 }
 
 fn create_button(

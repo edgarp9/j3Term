@@ -3,6 +3,7 @@ pub mod command;
 pub mod identity;
 pub mod input;
 pub mod layout;
+pub mod license;
 pub mod session;
 pub mod terminal;
 
@@ -15,7 +16,7 @@ pub use command::{
     ShellCommandDialect, StartupCommand, StartupDirectory, StartupInvocation,
     default_platform_command_panel,
 };
-pub use identity::{APP_DISPLAY_NAME, APP_VERSION, AUTHOR_PROFILE_URL};
+pub use identity::{APP_DISPLAY_NAME, AUTHOR_PROFILE_URL, application_version_label};
 #[cfg(target_os = "linux")]
 pub use identity::{APP_NAME, LINUX_APPLICATION_ID};
 #[cfg(any(test, target_os = "windows"))]
@@ -25,6 +26,7 @@ pub use input::{
     terminal_paste_text_to_pty_bytes,
 };
 pub use layout::{UiPoint, UiRect, WindowLayout};
+pub use license::{ABOUT_FILE, ABOUT_TEXT};
 pub use session::{SessionStatus, TerminalEvent, TerminalFailure, session_status_after_event};
 pub use terminal::{
     CursorPosition, DEFAULT_COLUMNS, DEFAULT_ROWS, MAX_TERMINAL_TABS, MIN_COLUMNS, MIN_ROWS,

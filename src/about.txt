@@ -1,0 +1,63 @@
+j3Term
+
+Copyright: Copyright (C) 2026 j3Term contributors
+License: GNU General Public License v3.0 or later (GPL-3.0-or-later)
+
+
+License
+-------
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+Full license text:
+LICENSE
+
+
+Source Code
+-----------
+
+This binary release is distributed under GPL-3.0-or-later.
+
+Source code for this release:
+https://github.com/edgarp9/j3Term
+
+If this release is distributed from another location, provide the exact source
+package that corresponds to the binary package for that release.
+
+
+Third-Party Notices
+-------------------
+
+This program uses third-party open source components. Their licenses,
+copyright notices, source URLs, and required notices are listed in:
+
+THIRD_PARTY_NOTICES.txt
+
+Shared license texts referenced by the third-party notices are included in:
+
+LICENSES/
+
+Major third-party component categories may include:
+
+- Runtime libraries
+- Package manager dependencies
+- Windows system bindings
+- Linux desktop and GTK bindings
+- Build-time resource and packaging dependencies
+- Bundled icons, fonts, images, or other resources
+
+
+Release Files
+-------------
+
+The source and binary distributions for this release should include:
+
+- LICENSE
+- THIRD_PARTY_NOTICES.txt

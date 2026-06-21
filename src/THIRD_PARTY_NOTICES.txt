@@ -1,0 +1,1730 @@
+THIRD PARTY NOTICES
+===================
+
+Project: j3Term
+Project License: GNU General Public License v3.0 or later (GPL-3.0-or-later)
+Project Repository: https://github.com/edgarp9/j3Term
+
+
+Corresponding Source
+--------------------
+
+This binary release is distributed under GPL-3.0-or-later.
+
+Source code for this release:
+https://github.com/edgarp9/j3Term
+
+Full project license text:
+LICENSE
+
+
+Third-Party Component Summary
+-----------------------------
+
+This notice was generated from Cargo.lock for the checked
+x86_64-pc-windows-msvc and x86_64-unknown-linux-gnu normal/build
+dependency trees. Dev-only dependencies are not included.
+
+Component: aho-corasick
+Version: 1.1.4
+License: Unlicense OR MIT
+Copyright / Notice: Cargo authors: Andrew Gallant
+Source URL: https://github.com/BurntSushi/aho-corasick
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: alacritty_terminal
+Version: 0.26.0
+License: Apache-2.0
+Copyright / Notice: Cargo authors: Christian Duerr; Joe Wilm
+Source URL: https://github.com/alacritty/alacritty
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Windows and Linux release trees
+
+Component: anyhow
+Version: 1.0.102
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/anyhow
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: arrayvec
+Version: 0.7.6
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: bluss
+Source URL: https://github.com/bluss/arrayvec
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: atomic-waker
+Version: 1.1.2
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Stjepan Glavina; Contributors to futures-rs
+Source URL: https://github.com/smol-rs/atomic-waker
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: autocfg
+Version: 1.5.1
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Josh Stone
+Source URL: https://github.com/cuviper/autocfg
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: base64
+Version: 0.22.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Marshall Pierce
+Source URL: https://github.com/marshallpierce/rust-base64
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: bitflags
+Version: 1.3.2
+License: MIT/Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers
+Source URL: https://github.com/bitflags/bitflags
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: bitflags
+Version: 2.11.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers
+Source URL: https://github.com/bitflags/bitflags
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: cairo-rs
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: cairo-sys-rs
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: cfg_aliases
+Version: 0.1.1
+License: MIT
+Copyright / Notice: Cargo authors: Zicklag
+Source URL: https://github.com/katharostech/cfg_aliases
+Modified: No
+Distribution: Build-time transitive dependency selected by Windows and Linux build trees
+
+Component: cfg-expr
+Version: 0.20.8
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Embark; Jake Shadle
+Source URL: https://github.com/EmbarkStudios/cfg-expr
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: cfg-if
+Version: 1.0.4
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Alex Crichton
+Source URL: https://github.com/rust-lang/cfg-if
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: concurrent-queue
+Version: 2.5.0
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Stjepan Glavina; Taiki Endo; John Nunley
+Source URL: https://github.com/smol-rs/concurrent-queue
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: crossbeam-utils
+Version: 0.8.21
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/crossbeam-rs/crossbeam
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: cursor-icon
+Version: 1.2.0
+License: MIT OR Apache-2.0 OR Zlib
+Copyright / Notice: Cargo authors: Kirill Chibisov
+Source URL: https://github.com/rust-windowing/cursor-icon
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: downcast-rs
+Version: 1.2.1
+License: MIT/Apache-2.0
+Copyright / Notice: Cargo authors: Ashish Myles; Runji Wang
+Source URL: https://github.com/marcianx/downcast-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: equivalent
+Version: 1.0.2
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/indexmap-rs/equivalent
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: errno
+Version: 0.3.14
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Chris Wong; Dan Gohman
+Source URL: https://github.com/lambda-fairy/rust-errno
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: fastrand
+Version: 2.4.1
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Stjepan Glavina
+Source URL: https://github.com/smol-rs/fastrand
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: field-offset
+Version: 0.3.6
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Diggory Blake
+Source URL: https://github.com/Diggsey/rust-field-offset
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: filedescriptor
+Version: 0.8.3
+License: MIT
+Copyright / Notice: Cargo authors: Wez Furlong
+Source URL: https://github.com/wezterm/wezterm
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: futures-channel
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: futures-core
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: futures-executor
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: futures-io
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: futures-macro
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: futures-task
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: futures-util
+Version: 0.3.32
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/futures-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gdk-pixbuf
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gdk-pixbuf-sys
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gdk4
+Version: 0.11.2
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gdk4-sys
+Version: 0.11.2
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gio
+Version: 0.22.6
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gio-sys
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: glib
+Version: 0.22.7
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: glib-macros
+Version: 0.22.6
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: glib-sys
+Version: 0.22.6
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gobject-sys
+Version: 0.22.6
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: graphene-rs
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: graphene-sys
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gsk4
+Version: 0.11.1
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gsk4-sys
+Version: 0.11.1
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gtk4
+Version: 0.11.3
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Linux release trees
+
+Component: gtk4-macros
+Version: 0.11.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: gtk4-sys
+Version: 0.11.3
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk4-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: hashbrown
+Version: 0.17.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/rust-lang/hashbrown
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: heck
+Version: 0.5.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/withoutboats/heck
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: home
+Version: 0.5.12
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Brian Anderson
+Source URL: https://github.com/rust-lang/cargo
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: indexmap
+Version: 2.14.0
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/indexmap-rs/indexmap
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: lazy_static
+Version: 1.5.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Marvin Löbel
+Source URL: https://github.com/rust-lang-nursery/lazy-static.rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: libc
+Version: 0.2.186
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers
+Source URL: https://github.com/rust-lang/libc
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: linux-raw-sys
+Version: 0.12.1
+License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Dan Gohman
+Source URL: https://github.com/sunfishcode/linux-raw-sys
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: lock_api
+Version: 0.4.14
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Amanieu d'Antras
+Source URL: https://github.com/Amanieu/parking_lot
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: log
+Version: 0.4.29
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers
+Source URL: https://github.com/rust-lang/log
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: memchr
+Version: 2.8.0
+License: Unlicense OR MIT
+Copyright / Notice: Cargo authors: Andrew Gallant; bluss
+Source URL: https://github.com/BurntSushi/memchr
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: memoffset
+Version: 0.9.1
+License: MIT
+Copyright / Notice: Cargo authors: Gilad Naaman
+Source URL: https://github.com/Gilnaa/memoffset
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: miow
+Version: 0.6.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Alex Crichton
+Source URL: https://github.com/yoshuawuyts/miow
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: nix
+Version: 0.28.0
+License: MIT
+Copyright / Notice: Cargo authors: The nix-rust Project Developers
+Source URL: https://github.com/nix-rust/nix
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: pango
+Version: 0.22.6
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: pango-sys
+Version: 0.22.0
+License: MIT
+Copyright / Notice: Cargo authors: The gtk-rs Project Developers
+Source URL: https://github.com/gtk-rs/gtk-rs-core
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: parking_lot
+Version: 0.12.5
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Amanieu d'Antras
+Source URL: https://github.com/Amanieu/parking_lot
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: parking_lot_core
+Version: 0.9.12
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Amanieu d'Antras
+Source URL: https://github.com/Amanieu/parking_lot
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: pin-project-lite
+Version: 0.2.17
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/taiki-e/pin-project-lite
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: piper
+Version: 0.2.5
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Stjepan Glavina; John Nunley
+Source URL: https://github.com/smol-rs/piper
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: pkg-config
+Version: 0.3.33
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Alex Crichton
+Source URL: https://github.com/rust-lang/pkg-config-rs
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: polling
+Version: 3.11.0
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Stjepan Glavina; John Nunley
+Source URL: https://github.com/smol-rs/polling
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: portable-pty
+Version: 0.9.0
+License: MIT
+Copyright / Notice: Cargo authors: Wez Furlong
+Source URL: https://github.com/wezterm/wezterm
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Windows and Linux release trees
+
+Component: proc-macro-crate
+Version: 3.5.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Bastian Köcher
+Source URL: https://github.com/bkchr/proc-macro-crate
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: proc-macro2
+Version: 1.0.106
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay; Alex Crichton
+Source URL: https://github.com/dtolnay/proc-macro2
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: quote
+Version: 1.0.45
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/quote
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: regex-automata
+Version: 0.4.14
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers; Andrew Gallant
+Source URL: https://github.com/rust-lang/regex
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: regex-syntax
+Version: 0.8.10
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Rust Project Developers; Andrew Gallant
+Source URL: https://github.com/rust-lang/regex
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: rustc_version
+Version: 0.4.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/djc/rustc-version-rs
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: rustix
+Version: 1.1.4
+License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Dan Gohman; Jakub Konka
+Source URL: https://github.com/bytecodealliance/rustix
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: rustix-openpty
+Version: 0.2.0
+License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Dan Gohman
+Source URL: https://github.com/sunfishcode/rustix-openpty
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: scopeguard
+Version: 1.2.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: bluss
+Source URL: https://github.com/bluss/scopeguard
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: semver
+Version: 1.0.28
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/semver
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: serde
+Version: 1.0.228
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Erick Tryzelaar; David Tolnay
+Source URL: https://github.com/serde-rs/serde
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Windows and Linux release trees
+
+Component: serde_core
+Version: 1.0.228
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Erick Tryzelaar; David Tolnay
+Source URL: https://github.com/serde-rs/serde
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: serde_derive
+Version: 1.0.228
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Erick Tryzelaar; David Tolnay
+Source URL: https://github.com/serde-rs/serde
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: serde_spanned
+Version: 0.6.9
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: serde_spanned
+Version: 1.1.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: serial2
+Version: 0.2.36
+License: BSD-2-Clause OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/de-vri-es/serial2-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: shared_library
+Version: 0.1.9
+License: Apache-2.0/MIT
+Copyright / Notice: Cargo authors: Pierre Krieger
+Source URL: https://github.com/tomaka/shared_library/
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: shell-words
+Version: 1.1.1
+License: MIT/Apache-2.0
+Copyright / Notice: Cargo authors: Tomasz Miąsko
+Source URL: https://github.com/tmiasko/shell-words
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: signal-hook
+Version: 0.4.4
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Michal 'vorner' Vaner; Thomas Himmelstoss
+Source URL: https://github.com/vorner/signal-hook
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: signal-hook-registry
+Version: 1.4.8
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Michal 'vorner' Vaner; Masaki Hara
+Source URL: https://github.com/vorner/signal-hook
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: slab
+Version: 0.4.12
+License: MIT
+Copyright / Notice: Cargo authors: Carl Lerche
+Source URL: https://github.com/tokio-rs/slab
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: smallvec
+Version: 1.15.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: The Servo Project Developers
+Source URL: https://github.com/servo/rust-smallvec
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: syn
+Version: 2.0.117
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/syn
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: system-deps
+Version: 7.0.8
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Guillaume Desmottes; Josh Triplett
+Source URL: https://github.com/gdesmott/system-deps
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: target-lexicon
+Version: 0.13.5
+License: Apache-2.0 WITH LLVM-exception
+Copyright / Notice: Cargo authors: Dan Gohman
+Source URL: https://github.com/bytecodealliance/target-lexicon
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: thiserror
+Version: 1.0.69
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/thiserror
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: thiserror-impl
+Version: 1.0.69
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/thiserror
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: toml
+Version: 0.8.23
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Windows and Linux release trees
+
+Component: toml
+Version: 1.1.2+spec-1.1.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: toml_datetime
+Version: 0.6.11
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: toml_datetime
+Version: 1.1.1+spec-1.1.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: toml_edit
+Version: 0.22.27
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: toml_edit
+Version: 0.25.12+spec-1.1.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: toml_parser
+Version: 1.1.2+spec-1.1.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: toml_write
+Version: 0.1.2
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/toml-rs/toml
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: unicode-ident
+Version: 1.0.24
+License: (MIT OR Apache-2.0) AND Unicode-3.0
+Copyright / Notice: Cargo authors: David Tolnay
+Source URL: https://github.com/dtolnay/unicode-ident
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: unicode-width
+Version: 0.2.2
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: kwantam; Manish Goregaokar
+Source URL: https://github.com/unicode-rs/unicode-width
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: version_check
+Version: 0.9.5
+License: MIT/Apache-2.0
+Copyright / Notice: Cargo authors: Sergio Benitez
+Source URL: https://github.com/SergioBenitez/version_check
+Modified: No
+Distribution: Build-time transitive dependency selected by Windows and Linux build trees
+
+Component: version-compare
+Version: 0.2.1
+License: MIT
+Copyright / Notice: Cargo authors: Tim Visee
+Source URL: https://gitlab.com/timvisee/version-compare
+Modified: No
+Distribution: Build-time transitive dependency selected by Linux build trees
+
+Component: vte
+Version: 0.15.0
+License: Apache-2.0 OR MIT
+Copyright / Notice: Cargo authors: Joe Wilm; Christian Duerr
+Source URL: https://github.com/alacritty/vte
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: winapi
+Version: 0.3.9
+License: MIT/Apache-2.0
+Copyright / Notice: Cargo authors: Peter Atashian
+Source URL: https://github.com/retep998/winapi-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: windows_x86_64_msvc
+Version: 0.52.6
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Microsoft
+Source URL: https://github.com/microsoft/windows-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: windows-link
+Version: 0.2.1
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/microsoft/windows-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: windows-sys
+Version: 0.59.0
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Microsoft
+Source URL: https://github.com/microsoft/windows-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: windows-sys
+Version: 0.61.2
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/microsoft/windows-rs
+Modified: No
+Distribution: Direct runtime Cargo dependency selected by Windows release trees
+
+Component: windows-targets
+Version: 0.52.6
+License: MIT OR Apache-2.0
+Copyright / Notice: Cargo authors: Microsoft
+Source URL: https://github.com/microsoft/windows-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: winnow
+Version: 0.7.15
+License: MIT
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/winnow-rs/winnow
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows and Linux release trees
+
+Component: winnow
+Version: 1.0.3
+License: MIT
+Copyright / Notice: Cargo authors field empty; review upstream notice files
+Source URL: https://github.com/winnow-rs/winnow
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Linux release trees
+
+Component: winreg
+Version: 0.10.1
+License: MIT
+Copyright / Notice: Cargo authors: Igor Shaula
+Source URL: https://github.com/gentoo90/winreg-rs
+Modified: No
+Distribution: Runtime transitive Cargo dependency selected by Windows release trees
+
+Component: winresource
+Version: 0.1.31
+License: MIT
+Copyright / Notice: Cargo authors: Max Resch
+Source URL: https://github.com/BenjaminRi/winresource
+Modified: No
+Distribution: Direct build-time resource helper selected by Windows and Linux build trees; icon embedding path is used on Windows
+
+Component: Google Fonts Material Symbols / Material Icons
+Version: Bundled icon resources in this repository
+License: Apache-2.0
+Copyright / Notice: Google Material Symbols/Icons by Google; upstream Apache-2.0 notice
+Source URL: https://fonts.google.com/icons and https://github.com/google/material-design-icons
+Modified: Yes; icon artwork was converted/recolored into repository icon resources
+Distribution: Bundled as icon.svg and icon.ico resources
+
+MIT-Licensed Components
+-----------------------
+
+The following components are distributed under the MIT License, either solely
+or as one option in a dual license. j3Term does not modify these Cargo
+packages.
+
+- aho-corasick 1.1.4
+- anyhow 1.0.102
+- arrayvec 0.7.6
+- atomic-waker 1.1.2
+- autocfg 1.5.1
+- base64 0.22.1
+- bitflags 1.3.2
+- bitflags 2.11.1
+- cairo-rs 0.22.0
+- cairo-sys-rs 0.22.0
+- cfg_aliases 0.1.1
+- cfg-expr 0.20.8
+- cfg-if 1.0.4
+- concurrent-queue 2.5.0
+- crossbeam-utils 0.8.21
+- cursor-icon 1.2.0
+- downcast-rs 1.2.1
+- equivalent 1.0.2
+- errno 0.3.14
+- fastrand 2.4.1
+- field-offset 0.3.6
+- filedescriptor 0.8.3
+- futures-channel 0.3.32
+- futures-core 0.3.32
+- futures-executor 0.3.32
+- futures-io 0.3.32
+- futures-macro 0.3.32
+- futures-task 0.3.32
+- futures-util 0.3.32
+- gdk-pixbuf 0.22.0
+- gdk-pixbuf-sys 0.22.0
+- gdk4 0.11.2
+- gdk4-sys 0.11.2
+- gio 0.22.6
+- gio-sys 0.22.0
+- glib 0.22.7
+- glib-macros 0.22.6
+- glib-sys 0.22.6
+- gobject-sys 0.22.6
+- graphene-rs 0.22.0
+- graphene-sys 0.22.0
+- gsk4 0.11.1
+- gsk4-sys 0.11.1
+- gtk4 0.11.3
+- gtk4-macros 0.11.0
+- gtk4-sys 0.11.3
+- hashbrown 0.17.1
+- heck 0.5.0
+- home 0.5.12
+- indexmap 2.14.0
+- lazy_static 1.5.0
+- libc 0.2.186
+- linux-raw-sys 0.12.1
+- lock_api 0.4.14
+- log 0.4.29
+- memchr 2.8.0
+- memoffset 0.9.1
+- miow 0.6.1
+- nix 0.28.0
+- pango 0.22.6
+- pango-sys 0.22.0
+- parking_lot 0.12.5
+- parking_lot_core 0.9.12
+- pin-project-lite 0.2.17
+- piper 0.2.5
+- pkg-config 0.3.33
+- polling 3.11.0
+- portable-pty 0.9.0
+- proc-macro-crate 3.5.0
+- proc-macro2 1.0.106
+- quote 1.0.45
+- regex-automata 0.4.14
+- regex-syntax 0.8.10
+- rustc_version 0.4.1
+- rustix 1.1.4
+- rustix-openpty 0.2.0
+- scopeguard 1.2.0
+- semver 1.0.28
+- serde 1.0.228
+- serde_core 1.0.228
+- serde_derive 1.0.228
+- serde_spanned 0.6.9
+- serde_spanned 1.1.1
+- shared_library 0.1.9
+- shell-words 1.1.1
+- signal-hook 0.4.4
+- signal-hook-registry 1.4.8
+- slab 0.4.12
+- smallvec 1.15.1
+- syn 2.0.117
+- system-deps 7.0.8
+- thiserror 1.0.69
+- thiserror-impl 1.0.69
+- toml 0.8.23
+- toml 1.1.2+spec-1.1.0
+- toml_datetime 0.6.11
+- toml_datetime 1.1.1+spec-1.1.0
+- toml_edit 0.22.27
+- toml_edit 0.25.12+spec-1.1.0
+- toml_parser 1.1.2+spec-1.1.0
+- toml_write 0.1.2
+- unicode-ident 1.0.24
+- unicode-width 0.2.2
+- version_check 0.9.5
+- version-compare 0.2.1
+- vte 0.15.0
+- winapi 0.3.9
+- windows_x86_64_msvc 0.52.6
+- windows-link 0.2.1
+- windows-sys 0.59.0
+- windows-sys 0.61.2
+- windows-targets 0.52.6
+- winnow 0.7.15
+- winnow 1.0.3
+- winreg 0.10.1
+- winresource 0.1.31
+
+The full MIT License text is provided once in the License Texts section at the
+end of this file.
+
+
+Apache-2.0-Licensed Components
+------------------------------
+
+The following components are distributed under Apache-2.0, either solely or as
+one option in a dual license. Components that use Apache-2.0 WITH
+LLVM-exception are also listed in the dedicated LLVM-exception section below.
+
+- alacritty_terminal 0.26.0
+- anyhow 1.0.102
+- arrayvec 0.7.6
+- atomic-waker 1.1.2
+- autocfg 1.5.1
+- base64 0.22.1
+- bitflags 1.3.2
+- bitflags 2.11.1
+- cfg-expr 0.20.8
+- cfg-if 1.0.4
+- concurrent-queue 2.5.0
+- crossbeam-utils 0.8.21
+- cursor-icon 1.2.0
+- downcast-rs 1.2.1
+- equivalent 1.0.2
+- errno 0.3.14
+- fastrand 2.4.1
+- field-offset 0.3.6
+- futures-channel 0.3.32
+- futures-core 0.3.32
+- futures-executor 0.3.32
+- futures-io 0.3.32
+- futures-macro 0.3.32
+- futures-task 0.3.32
+- futures-util 0.3.32
+- Google Fonts Material Symbols / Material Icons
+- hashbrown 0.17.1
+- heck 0.5.0
+- home 0.5.12
+- indexmap 2.14.0
+- lazy_static 1.5.0
+- libc 0.2.186
+- linux-raw-sys 0.12.1
+- lock_api 0.4.14
+- log 0.4.29
+- miow 0.6.1
+- parking_lot 0.12.5
+- parking_lot_core 0.9.12
+- pin-project-lite 0.2.17
+- piper 0.2.5
+- pkg-config 0.3.33
+- polling 3.11.0
+- proc-macro-crate 3.5.0
+- proc-macro2 1.0.106
+- quote 1.0.45
+- regex-automata 0.4.14
+- regex-syntax 0.8.10
+- rustc_version 0.4.1
+- rustix 1.1.4
+- rustix-openpty 0.2.0
+- scopeguard 1.2.0
+- semver 1.0.28
+- serde 1.0.228
+- serde_core 1.0.228
+- serde_derive 1.0.228
+- serde_spanned 0.6.9
+- serde_spanned 1.1.1
+- serial2 0.2.36
+- shared_library 0.1.9
+- shell-words 1.1.1
+- signal-hook 0.4.4
+- signal-hook-registry 1.4.8
+- smallvec 1.15.1
+- syn 2.0.117
+- system-deps 7.0.8
+- target-lexicon 0.13.5
+- thiserror 1.0.69
+- thiserror-impl 1.0.69
+- toml 0.8.23
+- toml 1.1.2+spec-1.1.0
+- toml_datetime 0.6.11
+- toml_datetime 1.1.1+spec-1.1.0
+- toml_edit 0.22.27
+- toml_edit 0.25.12+spec-1.1.0
+- toml_parser 1.1.2+spec-1.1.0
+- toml_write 0.1.2
+- unicode-ident 1.0.24
+- unicode-width 0.2.2
+- version_check 0.9.5
+- vte 0.15.0
+- winapi 0.3.9
+- windows_x86_64_msvc 0.52.6
+- windows-link 0.2.1
+- windows-sys 0.59.0
+- windows-sys 0.61.2
+- windows-targets 0.52.6
+
+No upstream NOTICE files were found in the checked Cargo package roots. If a
+future dependency ships a NOTICE file, preserve its applicable contents here or
+in an adjacent notice file included with the release.
+
+The full Apache License 2.0 text is provided once in the License Texts section
+at the end of this file.
+
+
+Apache-2.0 WITH LLVM-exception Components
+-----------------------------------------
+
+The following components declare Apache-2.0 WITH LLVM-exception, either solely
+or as one option in a multi-license expression.
+
+- linux-raw-sys 0.12.1
+- rustix 1.1.4
+- rustix-openpty 0.2.0
+- target-lexicon 0.13.5
+
+The Apache-2.0 WITH LLVM-exception text is provided once in the License Texts
+section at the end of this file.
+
+
+BSD-2-Clause Components
+-----------------------
+
+The following components are distributed under BSD-2-Clause, either solely or
+as one option in a multi-license expression.
+
+- serial2 0.2.36
+
+The full BSD-2-Clause text is provided once in the License Texts section at
+the end of this file.
+
+
+Unlicense OR MIT Components
+---------------------------
+
+The following components are distributed under Unlicense OR MIT.
+
+- aho-corasick 1.1.4
+- memchr 2.8.0
+
+The full Unlicense text is provided once in the License Texts section at the
+end of this file.
+
+
+Zlib Components
+---------------
+
+The following components are distributed under Zlib, either solely or as one
+option in a multi-license expression.
+
+- cursor-icon 1.2.0
+
+The full Zlib License text is provided once in the License Texts section at
+the end of this file.
+
+
+Unicode-3.0 Components
+----------------------
+
+The following components include Unicode-3.0 licensed data or software in their
+license expression.
+
+- unicode-ident 1.0.24
+
+The full Unicode-3.0 text is provided once in the License Texts section at
+the end of this file.
+
+
+GPL-Compatible / Copyleft Components
+------------------------------------
+
+No third-party GPL, LGPL, AGPL, or other copyleft component was identified in
+the checked dependency trees. The j3Term project itself is GPL-3.0-or-later;
+its license text is provided in LICENSE.
+
+
+SIL Open Font License Components
+--------------------------------
+
+No SIL Open Font License font was identified in the checked repository
+resources. Bundled application icons are Apache-2.0 resources, not OFL fonts.
+
+
+
+License Texts
+=============
+
+Apache-2.0
+----------
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+   "License" shall mean the terms and conditions for use, reproduction,
+   and distribution as defined by Sections 1 through 9 of this document.
+
+   "Licensor" shall mean the copyright owner or entity authorized by
+   the copyright owner that is granting the License.
+
+   "Legal Entity" shall mean the union of the acting entity and all
+   other entities that control, are controlled by, or are under common
+   control with that entity. For the purposes of this definition,
+   "control" means (i) the power, direct or indirect, to cause the
+   direction or management of such entity, whether by contract or
+   otherwise, or (ii) ownership of fifty percent (50%) or more of the
+   outstanding shares, or (iii) beneficial ownership of such entity.
+
+   "You" (or "Your") shall mean an individual or Legal Entity
+   exercising permissions granted by this License.
+
+   "Source" form shall mean the preferred form for making modifications,
+   including but not limited to software source code, documentation
+   source, and configuration files.
+
+   "Object" form shall mean any form resulting from mechanical
+   transformation or translation of a Source form, including but
+   not limited to compiled object code, generated documentation,
+   and conversions to other media types.
+
+   "Work" shall mean the work of authorship, whether in Source or
+   Object form, made available under the License, as indicated by a
+   copyright notice that is included in or attached to the work
+   (an example is provided in the Appendix below).
+
+   "Derivative Works" shall mean any work, whether in Source or Object
+   form, that is based on (or derived from) the Work and for which the
+   editorial revisions, annotations, elaborations, or other modifications
+   represent, as a whole, an original work of authorship. For the purposes
+   of this License, Derivative Works shall not include works that remain
+   separable from, or merely link (or bind by name) to the interfaces of,
+   the Work and Derivative Works thereof.
+
+   "Contribution" shall mean any work of authorship, including
+   the original version of the Work and any modifications or additions
+   to that Work or Derivative Works thereof, that is intentionally
+   submitted to Licensor for inclusion in the Work by the copyright owner
+   or by an individual or Legal Entity authorized to submit on behalf of
+   the copyright owner. For the purposes of this definition, "submitted"
+   means any form of electronic, verbal, or written communication sent
+   to the Licensor or its representatives, including but not limited to
+   communication on electronic mailing lists, source code control systems,
+   and issue tracking systems that are managed by, or on behalf of, the
+   Licensor for the purpose of discussing and improving the Work, but
+   excluding communication that is conspicuously marked or otherwise
+   designated in writing by the copyright owner as "Not a Contribution."
+
+   "Contributor" shall mean Licensor and any individual or Legal Entity
+   on behalf of whom a Contribution has been received by Licensor and
+   subsequently incorporated within the Work.
+
+2. Grant of Copyright License. Subject to the terms and conditions of
+   this License, each Contributor hereby grants to You a perpetual,
+   worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+   copyright license to reproduce, prepare Derivative Works of,
+   publicly display, publicly perform, sublicense, and distribute the
+   Work and such Derivative Works in Source or Object form.
+
+3. Grant of Patent License. Subject to the terms and conditions of
+   this License, each Contributor hereby grants to You a perpetual,
+   worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+   (except as stated in this section) patent license to make, have made,
+   use, offer to sell, sell, import, and otherwise transfer the Work,
+   where such license applies only to those patent claims licensable
+   by such Contributor that are necessarily infringed by their
+   Contribution(s) alone or by combination of their Contribution(s)
+   with the Work to which such Contribution(s) was submitted. If You
+   institute patent litigation against any entity (including a
+   cross-claim or counterclaim in a lawsuit) alleging that the Work
+   or a Contribution incorporated within the Work constitutes direct
+   or contributory patent infringement, then any patent licenses
+   granted to You under this License for that Work shall terminate
+   as of the date such litigation is filed.
+
+4. Redistribution. You may reproduce and distribute copies of the
+   Work or Derivative Works thereof in any medium, with or without
+   modifications, and in Source or Object form, provided that You
+   meet the following conditions:
+
+   (a) You must give any other recipients of the Work or
+       Derivative Works a copy of this License; and
+
+   (b) You must cause any modified files to carry prominent notices
+       stating that You changed the files; and
+
+   (c) You must retain, in the Source form of any Derivative Works
+       that You distribute, all copyright, patent, trademark, and
+       attribution notices from the Source form of the Work,
+       excluding those notices that do not pertain to any part of
+       the Derivative Works; and
+
+   (d) If the Work includes a "NOTICE" text file as part of its
+       distribution, then any Derivative Works that You distribute must
+       include a readable copy of the attribution notices contained
+       within such NOTICE file, excluding those notices that do not
+       pertain to any part of the Derivative Works, in at least one
+       of the following places: within a NOTICE text file distributed
+       as part of the Derivative Works; within the Source form or
+       documentation, if provided along with the Derivative Works; or,
+       within a display generated by the Derivative Works, if and
+       wherever such third-party notices normally appear. The contents
+       of the NOTICE file are for informational purposes only and
+       do not modify the License. You may add Your own attribution
+       notices within Derivative Works that You distribute, alongside
+       or as an addendum to the NOTICE text from the Work, provided
+       that such additional attribution notices cannot be construed
+       as modifying the License.
+
+   You may add Your own copyright statement to Your modifications and
+   may provide additional or different license terms and conditions
+   for use, reproduction, or distribution of Your modifications, or
+   for any such Derivative Works as a whole, provided Your use,
+   reproduction, and distribution of the Work otherwise complies with
+   the conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise,
+   any Contribution intentionally submitted for inclusion in the Work
+   by You to the Licensor shall be under the terms and conditions of
+   this License, without any additional terms or conditions.
+   Notwithstanding the above, nothing herein shall supersede or modify
+   the terms of any separate license agreement you may have executed
+   with Licensor regarding such Contributions.
+
+6. Trademarks. This License does not grant permission to use the trade
+   names, trademarks, service marks, or product names of the Licensor,
+   except as required for reasonable and customary use in describing the
+   origin of the Work and reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty. Unless required by applicable law or
+   agreed to in writing, Licensor provides the Work (and each
+   Contributor provides its Contributions) on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+   implied, including, without limitation, any warranties or conditions
+   of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+   PARTICULAR PURPOSE. You are solely responsible for determining the
+   appropriateness of using or redistributing the Work and assume any
+   risks associated with Your exercise of permissions under this License.
+
+8. Limitation of Liability. In no event and under no legal theory,
+   whether in tort (including negligence), contract, or otherwise,
+   unless required by applicable law (such as deliberate and grossly
+   negligent acts) or agreed to in writing, shall any Contributor be
+   liable to You for damages, including any direct, indirect, special,
+   incidental, or consequential damages of any character arising as a
+   result of this License or out of the use or inability to use the
+   Work, even if such Contributor has been advised of the possibility
+   of such damages.
+
+9. Accepting Warranty or Additional Liability. While redistributing
+   the Work or Derivative Works thereof, You may choose to offer,
+   and charge a fee for, acceptance of support, warranty, indemnity,
+   or other liability obligations and/or rights consistent with this
+   License. However, in accepting such obligations, You may act only
+   on Your own behalf and on Your sole responsibility, not on behalf
+   of any other Contributor, and only if You agree to indemnify,
+   defend, and hold each Contributor harmless for any liability
+   incurred by, or claims asserted against, such Contributor by reason
+   of your accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
+
+
+Apache-2.0 WITH LLVM-exception
+------------------------------
+
+Apache License 2.0 with LLVM Exceptions
+
+This file is used for dependencies declaring the SPDX expression
+`Apache-2.0 WITH LLVM-exception`. The Apache License 2.0 text is available in
+`LICENSES/Apache-2.0.txt`; the additional LLVM exception text is below.
+
+--- LLVM Exceptions to the Apache 2.0 License ----
+
+As an exception, if, as a result of your compiling your source code, portions
+of this Software are embedded into an Object form of such source code, you may
+redistribute such embedded portions in such Object form without complying with
+the conditions of Sections 4(a), 4(b) and 4(d) of the License.
+
+In addition, if you combine or link compiled forms of this Software with
+software that is licensed under the GPLv2 ("Combined Software") and if a court
+of competent jurisdiction determines that the patent provision (Section 3), the
+indemnity provision (Section 9) or other Section of the License conflicts with
+the conditions of the GPLv2, you may retroactively and prospectively choose to
+deem waived or otherwise exclude such Section(s) of the License, but only in
+their entirety and only with respect to the Combined Software.
+
+
+BSD-2-Clause
+------------
+
+BSD 2-Clause License
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+MIT
+---
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+SIL Open Font License 1.1
+-------------------------
+
+SIL OPEN FONT LICENSE
+Version 1.1 - 26 February 2007
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership with
+others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The fonts,
+including any derivative works, can be bundled, embedded, redistributed
+and/or sold with any software provided that any reserved names are not used by
+derivative works. The fonts and derivatives, however, cannot be released under
+any other type of license. The requirement for fonts to remain under this
+license does not apply to any document created using the fonts or their
+derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may include
+source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting, or
+substituting -- in part or in whole -- any of the components of the Original
+Version, by changing formats or by porting the Font Software to a new
+environment.
+
+"Author" refers to any designer, engineer, programmer, technical writer or
+other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the Font Software, to use, study, copy, merge, embed, modify, redistribute,
+and sell modified and unmodified copies of the Font Software, subject to the
+following conditions:
+
+1) Neither the Font Software nor any of its individual components, in Original
+or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy contains
+the above copyright notice and this license. These can be included either as
+stand-alone text files, human-readable headers or in the appropriate
+machine-readable metadata fields within text or binary files as long as those
+fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font Name(s)
+unless explicit written permission is granted by the corresponding Copyright
+Holder. This restriction only applies to the primary font name as presented to
+the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any Modified
+Version, except to acknowledge the contribution(s) of the Copyright Holder(s)
+and the Author(s) or with their explicit written permission.
+
+5) The Font Software, modified or unmodified, in part or in whole, must be
+distributed entirely under this license, and must not be distributed under any
+other license. The requirement for fonts to remain under this license does not
+apply to any document created using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,
+TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL,
+INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE
+THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+
+
+Unicode-3.0
+-----------
+
+UNICODE LICENSE V3
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright (c) 1991-2023 Unicode, Inc.
+
+NOTICE TO USER: Carefully read the following legal agreement. BY DOWNLOADING,
+INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR SOFTWARE, YOU
+UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE TERMS AND
+CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL,
+COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of data files and any associated documentation (the "Data Files") or software
+and any associated documentation (the "Software") to deal in the Data Files or
+Software without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, and/or sell copies of the Data Files
+or Software, and to permit persons to whom the Data Files or Software are
+furnished to do so, provided that either (a) this copyright and permission
+notice appear with all copies of the Data Files or Software, or (b) this
+copyright and permission notice appear in associated Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+THIRD PARTY RIGHTS.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE
+LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY
+DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not
+be used in advertising or otherwise to promote the sale, use or other dealings
+in these Data Files or Software without prior written authorization of the
+copyright holder.
+
+
+Unlicense
+---------
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute
+this software, either in source code form or as a compiled binary, for any
+purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this
+software dedicate any and all copyright interest in the software to the public
+domain. We make this dedication for the benefit of the public at large and to
+the detriment of our heirs and successors. We intend this dedication to be an
+overt act of relinquishment in perpetuity of all present and future rights to
+this software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+
+
+Zlib
+----
+
+Zlib License
+
+This software is provided 'as-is', without any express or implied warranty. In
+no event will the authors be held liable for any damages arising from the use
+of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it freely,
+subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim
+   that you wrote the original software. If you use this software in a
+   product, an acknowledgment in the product documentation would be appreciated
+   but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source distribution.

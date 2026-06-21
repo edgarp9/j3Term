@@ -1,4 +1,5 @@
 pub mod config;
+pub mod distribution;
 #[cfg(target_os = "linux")]
 pub mod gtk;
 #[cfg(target_os = "linux")]
